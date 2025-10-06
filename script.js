@@ -24,6 +24,11 @@ button2.onclick = goCave;
 button3.onclick = fightDragon;
 
 
+function update (location) {
+  
+}
+
+
 function goTown() {
   button1.innerText = "Go to store";
   button2.innerText = "Go to cave";
