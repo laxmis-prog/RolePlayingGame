@@ -73,8 +73,8 @@ const locations = [
     name: "fight",
     "button text": ["Attack", "Dodge", "Run"],
     "button functions": [attack, dodge, goTown],
-    text: "You are fighting a monster."
-  }
+    text: "You are fighting a monster.",
+  },
 ];
 
 // initialize buttons
@@ -163,13 +163,9 @@ function fightDragon() {
   goFight();
 }
 
-function goFight() {}
-
-function attack () {
-
-}
-function dodge () {
-  
+function goFight() {
+  update(locations[3]);
 }
 
-
+function attack() {}
+function dodge() {}
