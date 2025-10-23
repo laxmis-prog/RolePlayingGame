@@ -203,10 +203,15 @@ function attack() {
     lose();
   } else if (monsterHealth <= 0) {
     defeatMonster();
-    if (fighting===2) {
-      winGame()
-    }else {
+    if (fighting === 2) {
+      winGame();
+    } else {
       defeatMonster();
+      if (fighting === 2) {
+        winGame();
+      } else {
+        defeatMonster();
+      }
     }
   }
 }
