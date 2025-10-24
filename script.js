@@ -97,8 +97,8 @@ const locations = [
     name: "win",
     "button text": ["REPLAY?", "REPLAY?", "REPLAY?"],
     "button functions": [restart, restart, restart],
-    text: "You defeat the dragon! YOU WIN THE GAME! &#x1F389;"
-  }
+    text: "You defeat the dragon! YOU WIN THE GAME! &#x1F389;",
+  },
 ];
 
 // initialize buttons
@@ -222,11 +222,10 @@ function attack() {
   }
 }
 
-function getMonsterAttackValue (level) {
-const hit = (level * 5) - (Math.floor(Math.random() * xp));
-console.log(hit);
-  return hit;
-
+function getMonsterAttackValue(level) {
+  const hit = level * 5 - Math.floor(Math.random() * xp);
+  console.log(hit);
+  return hit > 0 ? hit : 0;
 }
 
 function dodge() {
@@ -244,8 +243,8 @@ function lose() {
   update(locations[5]);
 }
 
-function winGame () {
-  update (locations[6]);
+function winGame() {
+  update(locations[6]);
 }
 
 function restart() {
