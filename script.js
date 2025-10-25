@@ -224,7 +224,8 @@ function attack() {
       }
     }
     if (Math.random() <= 0.1) {
-      text.innerText += " Your " + inventory.pop() + " breaks."
+      text.innerText += " Your " + inventory.pop() + " breaks.";
+      currentWeaponIndex--;
     }
   }
 }
