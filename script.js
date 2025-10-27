@@ -290,4 +290,6 @@ function pickEight() {
   pick(8);
 }
 
-function pick(guess) {}
+function pick(guess) {
+  const numbers = [];
+}
